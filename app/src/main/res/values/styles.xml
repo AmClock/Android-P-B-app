@@ -8,4 +8,43 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="btn_st_bo">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_st</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:fontFamily">@font/bmdohyron_ttf</item>
+    </style>
+
+
+    <style name="btn_st_no">
+        <item name="android:layout_width">144dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:fontFamily">@font/bmdohyron_ttf</item>
+    </style>
+
+    <style name="ed_wrap">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/ed_st</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="ed_box">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">#c9c9c9</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/bmdohyron_ttf</item>
+    </style>
+
 </resources>
