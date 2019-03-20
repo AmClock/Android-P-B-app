@@ -14,30 +14,22 @@ public class SignInActivtiy extends AppCompatActivity {
 
     protected String TAG = "SignInActivtiy";
 
-
-    Button login, signUp;
-    EditText id, pwd;
-    Intent intent;
+    private Button login, signUp;
+    private EditText id, pwd;
+    private Intent intent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-        id = (EditText) findViewById(R.id.id);
-        pwd = (EditText) findViewById(R.id.pwd);
-
-
-        login = (Button) findViewById(R.id.login);
-        signUp = (Button) findViewById(R.id.signUp);
-
-
-
+        init();
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                intent = new Intent(SignInActivtiy.this , MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -52,7 +44,15 @@ public class SignInActivtiy extends AppCompatActivity {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        Log.i(TAG, "onKeyUp: "+keyCode +" :: " + event);
+        Log.i(TAG, "onKeyUp: " + keyCode + " :: " + event);
         return super.onKeyUp(keyCode, event);
     }
+
+    private void init() {
+        id = (EditText) findViewById(R.id.id);
+        pwd = (EditText) findViewById(R.id.pwd);
+        login = (Button) findViewById(R.id.login);
+        signUp = (Button) findViewById(R.id.signUp);
+    }//init end
+
 }//SignInActivity end
