@@ -16,12 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <!--activity-->
-
         <!--      <activity android:name=".TitleActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
-
+        <activity android:name=".MainActivity"   android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".SignInActivtiy" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".SignUpActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>

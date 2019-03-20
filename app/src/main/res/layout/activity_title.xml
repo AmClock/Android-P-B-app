@@ -20,12 +20,10 @@
             style="@style/btn_st_no"
             android:id="@+id/signInBtn"
             android:text="Sign in"
-            android:layout_marginRight="5dp"
             />
 
         <Button
             style="@style/btn_st_bo"
-            android:layout_marginLeft="5dp"
             android:id="@+id/signUpBtn"
             android:text="Sign up"
             />

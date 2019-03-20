@@ -14,6 +14,7 @@
         <item name="android:background">@drawable/btn_st</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">#fff</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:fontFamily">@font/bmdohyron_ttf</item>
     </style>
 
@@ -23,6 +24,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:textColor">#fff</item>
         <item name="android:fontFamily">@font/bmdohyron_ttf</item>
     </style>
@@ -43,8 +45,16 @@
         <item name="android:textColor">#fff</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColorHint">#c9c9c9</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">17dp</item>
         <item name="android:fontFamily">@font/bmdohyron_ttf</item>
+    </style>
+
+    <style name="radio_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:fontFamily">@font/bmdohyron_ttf</item>
+        <item name="android:layout_marginRight">20dp</item>
     </style>
 
 </resources>
