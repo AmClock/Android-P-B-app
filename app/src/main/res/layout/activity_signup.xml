@@ -6,13 +6,77 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <FrameLayout style="@style/ed_wrap">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="android"
-        android:textSize="50dp"
+        <EditText
+            android:id="@+id/name"
+            style="@style/ed_box"
+            android:hint="Name"
+            android:inputType="text" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/ed_wrap">
+
+        <EditText
+            android:id="@+id/id"
+            style="@style/ed_box"
+            android:hint="ID"
+            android:inputType="text" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/ed_wrap">
+
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/ed_box"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/ed_wrap">
+
+        <EditText
+            android:id="@+id/date"
+            style="@style/ed_box"
+            android:inputType="date" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        style="@style/ed_wrap"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/man"
+            style="@style/radio_btn"
+            android:text="Man" />
+
+        <RadioButton
+            android:id="@+id/woman"
+            style="@style/radio_btn"
+            android:text="Woman" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/successBtn"
+        style="@style/btn_st_bo"
+        android:layout_marginTop="5dp"
+        android:text="success"
         />
 
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you do not want to join, please click"
+        android:textColor="#c9c9c9"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:fontFamily="@font/bmdohyron_ttf"
+        />
 
 </LinearLayout>
+
+

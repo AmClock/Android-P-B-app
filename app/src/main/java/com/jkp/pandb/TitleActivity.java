@@ -21,10 +21,9 @@ public class TitleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title);
-
         workSplash();
+        init();
 
-        singIn = (Button) findViewById(R.id.signInBtn);
         singIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +32,6 @@ public class TitleActivity extends AppCompatActivity {
             }
         });//signIn end
 
-        singUp = (Button) findViewById(R.id.signUpBtn);
         singUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +54,10 @@ public class TitleActivity extends AppCompatActivity {
         }, 1500);
     }//workSplash end
 
-
+    private void init(){
+        singIn = (Button) findViewById(R.id.signInBtn);
+        singUp = (Button) findViewById(R.id.signUpBtn);
+    }//init end
 
 
 }// TitleActivity end
