@@ -2,6 +2,8 @@ package com.jkp.pandb;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class SignUpActivity extends AppCompatActivity {
 

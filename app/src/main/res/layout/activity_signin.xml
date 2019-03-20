@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24292E"
+    android:gravity="center"
+    android:orientation="vertical">
 
+    <FrameLayout style="@style/ed_wrap">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#c9c9c9"
-        android:text="sing in"
-        android:textColor="#fff"
-        android:textSize="40dp"
+        <EditText
+            android:id="@+id/id"
+            style="@style/ed_box"
+            android:hint="ID"
+            android:inputType="text" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/ed_wrap">
+
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/ed_box"
+            android:hint="Password"
+            android:inputType="textVisiblePassword" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/btn_st_bo"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <Button
+        style="@style/btn_st_no"
+        android:id="@+id/signUp"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
         />
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
