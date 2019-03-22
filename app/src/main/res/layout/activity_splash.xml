@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/splash"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#c9c9c9"
+    android:background="#33000000"
+    android:gravity="center"
     >
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/splashImg"
+        android:layout_width="128dp"
+        android:layout_height="15dp"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="301dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#424242"
-        android:text="Splash"
-        android:textSize="20dp"
-        android:gravity="center"
-        />
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
